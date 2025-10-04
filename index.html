@@ -4,39 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-        .darkTheme {
-            background-color: black;
-            color: white;
-        }
-
-        .darkTheme button {
-            background-color: gray;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-
-        .darkTheme button:hover {
-            background-color: darkgray !important;
-        }
-
-        .darkTheme h1 {
-            color: lightblue !important;
-            ;
-        }
-
-        .darkTheme p {
-            color: lightgray;
-        }
-
-        .darkTheme a {
-            color: lightgreen;
-        }
-    </style>
+    <title>Theme toggler</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -44,23 +13,7 @@
 
     <button id="myButton">Click Me</button>
 
-    <script>
-
-        if (localStorage.getItem("theme") )  document.body.classList.add("darkTheme");
-
-
-        function toggleDarkTheme() {
-
-            document.body.classList.toggle("darkTheme")
-
-            document.body.classList.contains("darkTheme") ? localStorage.setItem("theme", 'dark'): localStorage.removeItem("theme") ;
-
-        }
-
-        document.getElementById("myButton").addEventListener("click", toggleDarkTheme);
-
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

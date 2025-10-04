@@ -1,0 +1,29 @@
+   .darkTheme {
+       background-color: black;
+       color: white;
+   }
+
+   .darkTheme button {
+       background-color: gray;
+       color: white;
+       border: none;
+       padding: 10px 20px;
+       cursor: pointer;
+   }
+
+   .darkTheme button:hover {
+       background-color: darkgray !important;
+   }
+
+   .darkTheme h1 {
+       color: lightblue !important;
+       ;
+   }
+
+   .darkTheme p {
+       color: lightgray;
+   }
+
+   .darkTheme a {
+       color: lightgreen;
+   }
